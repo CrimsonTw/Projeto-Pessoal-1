@@ -1,0 +1,137 @@
+@font-face {
+    font-family: ringbearer;
+    src: url(./RINGM___.TTF);
+}
+
+body {
+    margin: 0%;
+    font-family: Ringbearer;
+    background-image: url(./imagens/Fundo\ Site\ Elden.jpg);
+    background-size: cover;
+    background-position-y: 90%;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #D9CBBA;
+}
+
+.card {
+    background-image: linear-gradient(#333, #333);
+    overflow: hidden;
+    border-radius: 15px;
+    max-width: 384px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    transition: all 1.2s;
+    box-shadow: rgba(0, 0, 0, 0.35) 3px 2px 5px 5px;
+}
+
+.card:hover {
+    background-image: linear-gradient(#0D1A26, #2D4040);
+}
+
+.card .img {
+    background-image: url(./imagens/wallpapersden.com_hoarah-loux-elden-ring_3840x2160.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 383px;
+    height: 237px;
+    display: flex;
+    align-items: center;
+    opacity: .9;
+    transition: all 1.2s;
+    z-index: 4;
+    position: relative;
+}
+
+.card .img span {
+    font-size: 200%;
+    font-weight: 60px;
+}
+
+.card:hover .img {
+    opacity: 1;
+    width: 393px;
+}
+
+.card .content {
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all 1.2s;
+    transform: translateY(40px);
+}
+
+.card:hover .content {
+    padding: 23px;
+    height: 267px;
+    transform: translateY(0);
+}
+
+.card .title {
+    font-size: 37px;
+}
+
+.card .arrow {
+    padding: 13px;
+    font-size: 37px;
+    transform: rotate(0deg);
+    transition: all 1.2s;
+}
+
+.card:hover .arrow {
+    transform: rotate(-180deg);
+}
+
+.nav-bar {
+    display: flex;
+    padding: 1.5rem 6rem;
+    justify-content: space-between;
+    color: #0D1A26;
+}
+
+.logo {
+    display: flex;
+    gap: 44px;
+}
+
+.logo h4 {
+    color: #180a0a;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 13px;
+}
+a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+a:active {
+    color: #F2C166;
+}
+
+a[tabindex]:focus {
+    color: #F2C166;
+    outline: none;
+}
